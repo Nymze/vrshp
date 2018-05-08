@@ -1,0 +1,75 @@
+
+
+
+
+  <a-scene class="scene" id="aframe-viewer">
+
+        
+        <!-- ==== Models ==== -->
+
+        <a-gltf-model class="umbrella" src="assets/scene1.gltf" position= "0 1.460 -1.094" scale= "0.010 0.010 0.010" ></a-gltf-model>
+        <a-gltf-model class="chair" src="assets/chair.gltf" position= "-1.5 0 -1.6" scale= "0.2 0.2 0.2" rotation="0 45 0" ></a-gltf-model>
+        <a-gltf-model class="rack" src="assets/rack.gltf" position= "0 0.8 -4" scale= "20 20 20" rotation="0 0 0" ></a-gltf-model>
+
+      
+
+
+        <a-entity text="value:LONDON 
+        UNDERCOVER; color:#FFFFF; shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/roboto/Roboto-Regular.json;" position="0.573 1.857 -1.052" scale="2.155 1.729 8.965"></a-entity>
+
+        <a-entity text="value:Handcrafted 
+        Designer Umbrellas; color:#FFFFF; shader: msdf; font:https://raw.githubusercontent.com/etiennepinchon/aframe-fonts/master/fonts/pangolin/Pangolin-Regular.json;" position="1.298 1.618 -1.052" scale="2.155 1.729 8.965"></a-entity>
+
+
+        <!-- ==== Floor (img) ==== -->
+
+        <a-assets>
+          <img id="floor" src="assets/woodtexture.jpg">
+        </a-assets>
+
+         <a-image src="#floor" position="0 -0.3 0" scale="8 8 0" rotation="90 0 0"></a-image>
+
+
+        <!-- <==== light ====> -->
+
+       
+
+        <a-light type="spot" color="#ff4f19" intensity="25" position="0 0.9 0" rotation="50 0 0" angle="25"></a-light>
+
+        <a-light type="ambient" color="#FFFF" intensity="10"></a-light>
+
+        
+
+
+
+
+    <!-- <==== Sky ====> -->
+
+         <a-assets>
+          <img id="sky" src="assets/cloudy.jpg">
+         </a-assets>
+
+          <a-sky src="#sky"></a-sky>
+        
+
+    <!-- <==== Camera ====> -->
+
+        <a-entity position="0 1.4 0">
+
+          <a-camera>
+            <a-cursor></a-cursor>
+          </a-camera>
+        </a-entity>
+
+      </a-scene>
+
+   
+
+
+
+
+
+     
+
+
+  
